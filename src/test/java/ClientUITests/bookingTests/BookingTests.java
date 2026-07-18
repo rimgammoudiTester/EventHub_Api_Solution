@@ -23,6 +23,7 @@ public class BookingTests extends UiBase {
         //loginAndAccessEspace(USER_EMAIL,USER_PASSWORD);
         log.info("you're sucessfullly logged in");
 
+
     }
 
     @Test(description = "view the details of booking")

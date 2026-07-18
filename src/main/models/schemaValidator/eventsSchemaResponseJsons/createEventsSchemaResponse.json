@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "My Schema",
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean"
+    },
+    "data.id": {
+      "type": "integer"
+    },
+    "data.title": {
+      "type": "string"
+    },
+    "data.description": {
+      "type": "string"
+    },
+    "data.category": {
+      "type": "string"
+    },
+    "data.limit": {
+      "type": "integer"
+    },
+    "data.venue": {
+      "type": "string"
+    },
+    "data.city": {
+      "type": "string"
+    },
+    "data.eventDate": {
+      "type": "string"
+    },
+    "data.price": {
+      "type": "number"
+    },
+    "data.totalSeats": {
+      "type": "number"
+    },
+    "data.availableSeats": {
+      "type": "integer"
+    },
+    "data.imageUrl": {
+      "type": "string"
+    },
+    "data.createdAt": {
+      "type": "string"
+    },
+    "data.updatedAt": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}
+
+
