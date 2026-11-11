@@ -1,9 +1,7 @@
-/*package eventHubApiPages.healthApis;
+package eventHubApiPages.healthApis;
 
 import genericApiKeywords.GenericApiKeyWords;
 import io.restassured.response.Response;
-
-import java.util.HashMap;
 
 public class HealthApis extends GenericApiKeyWords {
     /**
@@ -11,7 +9,7 @@ public class HealthApis extends GenericApiKeyWords {
      *
      */
 
-    /*public Response getHealthCheck(String healthEndpoint) {
+    public Response getHealthCheck(String healthEndpoint) {
         return extractObject(healthEndpoint);
     }
-}*/
+}
