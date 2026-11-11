@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="api test execution">
+    <test name="test api execution">
+        <classes>
+            <class name="apiTests.healthApiTests.HealthApiTests"/>
+            <class name="apiTests.configApiTests.ConfigApiTests"/>
+            <class name="apiTests.authentificationApiTests.getTheAuthenticatedApiTests"/>
+        </classes>
+    </test>
+</suite>
