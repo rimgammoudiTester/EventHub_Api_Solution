@@ -1,4 +1,4 @@
-/*package genericApiKeywords;
+package genericApiKeywords;
 
 import bases.apiBasePage.ApiBasePage;
 import io.restassured.response.Response;
@@ -17,7 +17,7 @@ public class GenericApiKeyWords extends ApiBasePage {
      * @Author Rim Gammoudi
      *
      */
-    /*RequestSpecification req = given();
+    RequestSpecification req = given();
     HashMap<String, String> headers = new HashMap<>();
 
     @BeforeClass
@@ -69,4 +69,4 @@ public class GenericApiKeyWords extends ApiBasePage {
     }
 
 
-}*/
+}
