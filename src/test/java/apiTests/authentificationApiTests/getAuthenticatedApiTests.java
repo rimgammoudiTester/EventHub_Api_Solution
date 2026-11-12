@@ -54,7 +54,6 @@ public class getTheAuthenticatedApiTests extends AuthentificationApis {
         loginHeader.put("Authorization", "Bearer " +token);
         loginHeader.put("Content-Type", "application/json");
         res = getTheAuthentificationUser(getPropertyFromConfigFile(LOGIN_ENDPOINT),loginHeader).then().extract().response();
-        System.out.println(res.getBody().prettyPrint());
         Assertions.assertThat(res.getStatusCode()).isEqualTo(SUCCESS_CODE);
         log.info("The current authenticated user api return :" + SUCCESS_CODE);
         success=res.path(SUCCESS_PROPERTY);

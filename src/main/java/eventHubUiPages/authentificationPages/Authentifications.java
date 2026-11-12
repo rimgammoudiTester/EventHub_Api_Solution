@@ -1,8 +1,7 @@
 package eventHubUiPages.authentificationPages;
-
-import com.microsoft.playwright.Locator;
-import com.microsoft.playwright.Page;
 import genericUiKeywords.GenericUiKeyWords;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 public class Authentifications extends GenericUiKeyWords {
 
@@ -13,15 +12,15 @@ public class Authentifications extends GenericUiKeyWords {
     //public Page page;
 
     //Locators for login page
-    public Authentifications(Page page)
+    public Authentifications(WebDriver driver)
     {
-        super(page);
+        super(driver);
     }
 
-    private final Locator emailLocator = page.locator("#email");
-    private final Locator passwordLocator = page.locator("#password");
-    private final Locator signInButton = page.locator("#login-btn");
-    private final Locator registerLink = page.getByText("Register");
+    private final By emailLocator = By.xpath("#email");
+    private final By passwordLocator = By.xpath("#password");
+    private final By signInButton = By.xpath("#login-btn");
+    private final By registerLink = By.xpath("Register");
 
 
 
@@ -34,11 +33,11 @@ public class Authentifications extends GenericUiKeyWords {
         fillInWebElement(emailLocator,emailOfUser);
         fillInWebElement(passwordLocator,passwordOfUser);
         clickInElement(signInButton);
-        page.waitForTimeout(2000);
+        //page.waitForTimeout(2000);
         reloadThePage();
 
     }
-    //Method uesful to accesss register
+    //Method useful to accesss register
 
     public void acessToRegister()
     {
